@@ -1,0 +1,10 @@
+﻿body {
+    height: 100vh;
+}
+
+
+.container{
+    width: 80%;
+    height: 70%;
+    margin: auto;
+}

@@ -1,0 +1,15 @@
+﻿.element-container {
+    border: 1px solid black;
+    height: 150px;
+    width: 250px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.elements{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}

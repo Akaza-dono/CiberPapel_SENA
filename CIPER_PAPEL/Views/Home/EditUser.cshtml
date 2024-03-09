@@ -1,0 +1,15 @@
+﻿@model CIPER_PAPEL.Class.UserListViewModel
+
+<form action="/Home/UpdateUser?id=@Model.User.Id" method="post">
+
+    <input value="@Model.User.Nombre" name="nombre"/>
+
+    <input value="@Model.User.Correo" name="correo"/>
+
+    <input value="@Model.User.Rol" name="rol"/>
+
+    <input value="@Model.User.IsBlocked.ToString()" name="isBlocked" />
+
+    <input type="submit"/>
+
+</form>

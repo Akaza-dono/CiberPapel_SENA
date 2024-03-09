@@ -1,0 +1,82 @@
+﻿<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.2.12/css/dx.light.css">
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.2.12/js/dx.all.js"></script>
+    <link href="~/css/users.css" rel="stylesheet" />
+</head>
+
+@model CIPER_PAPEL.Class.UserListViewModel
+
+
+<h1>Lista de usuarios</h1>
+
+<div class="container">
+    <div id="dataGridContainer"></div>
+</div>
+
+
+<script>
+    const url = '/Home/'
+
+    let differentValidation = (obj, param) => {
+
+    }
+
+    $(function () {
+        $("#dataGridContainer").dxDataGrid({
+            dataSource: @Html.Raw(Json.Serialize(Model.Users)),
+            columns: [
+                { dataField: "id", caption: "ID" },
+                { dataField: "nombre", caption: "Nombre" },
+                { dataField: "correo", caption: "Correo" },
+                { dataField: "rol", caption: "Rol" },
+                {
+                    type: "buttons",
+                    buttons: ["edit", "delete"]
+                }
+            ],
+            editing: {
+                mode: "row",
+                allowUpdating: true,
+                allowDeleting: true,
+                allowAdding: false
+            },
+            onRowUpdating: e => {
+                let dataBeforeUpdate = e;
+                let { oldData, newData } = e;
+                let User = {
+                    Id: oldData.id,
+                    Nombre: newData.nombre != undefined ? newData.nombre : oldData.nombre,
+                    Correo: newData.correo != undefined ? newData.correo : oldData.correo,
+                    IsBlocked: newData.IsBlocked != undefined ? newData.IsBlocked : oldData.IsBlocked,
+                    Rol: newData.rol != undefined ? newData.rol : oldData.rol,
+                };
+
+                fetch(`${url}EditUser`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(User)
+                })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`Error en la solicitud: ${response.status} ${response.statusText}`);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log('Respuesta exitosa:', data);
+                    })
+                    .catch(error => {
+                        console.error('Error en la solicitud:', error);
+                    });
+            },
+            onRowRemoving: function (e) {
+                var dataBeforeDelete = e.data;
+                console.log(e.data)
+                fetch(`${url}DeleteUser?UserId=${e.data.id}`)
+            }
+        });
+    });
+</script>
