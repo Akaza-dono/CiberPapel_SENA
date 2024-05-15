@@ -2,8 +2,8 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="~/css/PanelStyle.css" rel="stylesheet"/>
 
-<div class="container d-flex flex-wrap flex-row gap-1">
-@{
+<div class="body-color-back container d-flex flex-wrap flex-row gap-1 ">
+@*@{
     if (Model.Paneles != null)
     {
         for (int i = 0; i < Model.Paneles.Count(); i++)
@@ -17,5 +17,9 @@
             </div>
         }
     }
-}
+}*@
+</div>
+<div class="element-container">
+    <header class="header"></header>
+    <div class="options"></div>
 </div>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qGUfiuN+HKH0A3o9QFrMdGTaBnt4mgrap278pbv6/lSPvjnQwL2gk1/Kjt04W3RMxxqEA3SEgexypiIxjA88/w==",
+  "dgSpecHash": "UR4ZBDZW+XY/icUbOiI5HztzmgIL2Dbp5CleZmFop7qFp3yHeYXgg/mkMr5/eHes86J44q1T7/VK8IQEhJovLg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\APRENDIZ\\Desktop\\CIPER_PAPEL\\CIPER_PAPEL\\CIPER_PAPEL\\CIPER_PAPEL.csproj",
+  "projectFilePath": "C:\\Users\\APRENDIZ\\Source\\Repos\\CiberPapel_SENA\\CIPER_PAPEL\\CIPER_PAPEL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\APRENDIZ\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\APRENDIZ\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

@@ -1,15 +1,26 @@
 ﻿.element-container {
-    border: 1px solid black;
-    height: 150px;
-    width: 250px;
-    display: inline-block;
+    border: 0px solid black;
+    height: 100%;
+    width: 100%;
+    display: block;
     border-radius: 4px;
+    display: grid;
+    grid-template-columns: 0.8fr repeat(5, 1fr);
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.elements{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    text-align: center;
+.header {
+    background-color: red;
+    grid-column: 1/7;
+}
+
+body {
+    background-color: #CDE8E5 !important;
+    padding: 0;
+    margin: 0;
+}
+
+.options {
+    background-color: blue;
+    grid-row: 2/7;
 }
