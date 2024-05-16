@@ -2,10 +2,9 @@
     border: 0px solid black;
     height: 100%;
     width: 100%;
-    display: block;
     border-radius: 4px;
     display: grid;
-    grid-template-columns: 0.8fr repeat(5, 1fr);
+    grid-template-columns: 0.2fr repeat(5, 1fr);
     grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr;
 }
 
@@ -20,7 +19,28 @@ body {
     margin: 0;
 }
 
-.options {
+.options-menu {
     background-color: blue;
+    grid-row: 2/8; /* Esto establece la fila inicial y final */
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+}
+.dashboard {
+    background-color: deeppink;
+    grid-column: 2/7;
     grid-row: 2/7;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+
+.options-menu:hover {
+    background-color: green;
+    grid-row: 2/9 !important; /* Expandir la fila hasta 2/9 */
+    transition: grid-row 0.5s;
+}
+
+.option {
+    /* Aquí puedes agregar estilos adicionales para tus opciones si es necesario */
 }
