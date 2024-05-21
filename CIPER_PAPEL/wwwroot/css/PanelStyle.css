@@ -1,11 +1,11 @@
 ﻿.element-container {
-    border: 0px solid black;
     height: 100%;
     width: 100%;
     border-radius: 4px;
     display: grid;
     grid-template-columns: 0.2fr repeat(5, 1fr);
     grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr;
+    transition-duration: 0.2s;
 }
 
 .header {
@@ -16,7 +16,7 @@
 body {
     background-color: #CDE8E5 !important;
     padding: 0;
-    margin: 0;
+    margin: 5px;
 }
 
 .options-menu {
@@ -30,16 +30,16 @@ body {
     grid-column: 2/7;
     grid-row: 2/7;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 
-.options-menu:hover {
+/*.options-menu:hover {
     background-color: green;
-    grid-row: 2/9 !important; /* Expandir la fila hasta 2/9 */
-    transition: grid-row 0.5s;
-}
+    grid-row: 2/9 !important;*/ /* Expandir la fila hasta 2/9 */
+    /*transition: grid-row 0.5s;
+}*/
 
 .option {
     /* Aquí puedes agregar estilos adicionales para tus opciones si es necesario */
