@@ -11,14 +11,14 @@ namespace CIPER_PAPEL.Controllers
         private Connection _Connection = new Connection();
         public IActionResult Index(int userId)
         {
-            //UserListViewModel model = new UserListViewModel();
-            //model.Paneles = GetPanels(userId);
+            UserListViewModel model = new UserListViewModel();
+            model.Paneles = GetPanels(userId);
 
-            //return View(model);
+            return View(model);
 
-    
 
-            return View();
+
+            //return View();
         }
 
         public List<Panel> GetPanels(int user_id)

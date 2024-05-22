@@ -82,62 +82,62 @@ namespace CIPER_PAPEL.Controllers
         [HttpPost]
         public IActionResult Login(string usuario, string contrasena)
         {
-            //try
-            //{
-            //    int result = 0;
-            //    using (SqlConnection connection = new SqlConnection(_Connection.GetConnection()))
-            //    {
-            //        connection.Open();
-            //        using (SqlCommand command = new SqlCommand("Login", connection))
-            //        {
-            //            command.CommandType = CommandType.StoredProcedure;
-            //            command.Parameters.AddWithValue("@usuario", usuario);
-            //            command.Parameters.AddWithValue("@password", contrasena);
-            //            var reader = command.ExecuteReader();
-            //            if (reader.HasRows)
-            //            {
-            //                while (reader.Read())
-            //                {
-            //                    result = Convert.ToInt32(reader["Result"]);
-            //                }
-            //            }
-            //        }
-            //    }
-            //    if (result != 0)
-            //    {
-            //        List<User> users = GetUser();
-            //        var model = new UserListViewModel
-            //        {
-            //            Users = users,
-            //            Response = "OK"
-            //        };
-
-            //        //return View("LoginPage", model);
-            //        return RedirectToAction("index", "Panel", new
-            //        {
-            //            userId = result
-            //        });
-            //    }
-            //    var model2 = new UserListViewModel { Response = "Error" };
-            //    return View("Index", model2);
-            //}
-            //catch (Exception)
-            //{
-            //    throw;
-            //}
-            const int result = 1;
-            if (result != 0)
+            try
             {
-                //List<User> users = GetUser();
-                //var model = new UserListViewModel
-                //{
-                //    Users = users,
-                //    Response = "OK"
-                //};
+                int result = 0;
+                using (SqlConnection connection = new SqlConnection(_Connection.GetConnection()))
+                {
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand("Login", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("@usuario", "alejandro");
+                        command.Parameters.AddWithValue("@password", "alejo0598");
+                        var reader = command.ExecuteReader();
+                        if (reader.HasRows)
+                        {
+                            while (reader.Read())
+                            {
+                                result = Convert.ToInt32(reader["Result"]);
+                            }
+                        }
+                    }
+                }
+                if (result != 0)
+                {
+                    List<User> users = GetUser();
+                    var model = new UserListViewModel
+                    {
+                        Users = users,
+                        Response = "OK"
+                    };
 
-                //return View("LoginPage", model);
-                return RedirectToAction("index", "Panel");
+                    //return View("LoginPage", model);
+                    return RedirectToAction("index", "Panel", new
+                    {
+                        userId = result
+                    });
+                }
+                var model2 = new UserListViewModel { Response = "Error" };
+                return View("Index", model2);
             }
+            catch (Exception)
+            {
+                throw;
+            }
+            //const int result = 1;
+            //if (result != 0)
+            //{
+            //    //List<User> users = GetUser();
+            //    //var model = new UserListViewModel
+            //    //{
+            //    //    Users = users,
+            //    //    Response = "OK"
+            //    //};
+
+            //    //return View("LoginPage", model);
+            //    return RedirectToAction("index", "Panel");
+            //}
 
         }
 
