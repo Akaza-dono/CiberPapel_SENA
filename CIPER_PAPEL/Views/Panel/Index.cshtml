@@ -3,26 +3,20 @@
 <link href="~/css/PanelStyle.css" rel="stylesheet"/>
 
 <div class="body-color-back container d-flex flex-wrap flex-row gap-1 ">
-@*@{
-    if (Model.Paneles != null)
-    {
-        for (int i = 0; i < Model.Paneles.Count(); i++)
-        {
-            <div class="element-container">
-                <div class="elements">
-                    <h2>@Model.Paneles[i].Descripcion</h2>
-                    <i class="material-icons">@Model.Paneles[i].Icon</i>
-                    <input class="btn-success" type="submit" href="@Model.Paneles[i].URL" value="Ir" />
-                </div>
-            </div>
-        }
-    }
-}*@
 </div>
 <div class="element-container">
     <header class="header"></header>
     <div class="options-menu" id="options-menu">
-         <div class="option"></div>
+        @{
+        if (Model.Paneles != null)
+        {
+            for (int i = 0; i < Model.Paneles.Count(); i++){
+                <div class="option">
+                    <i class="material-icons">@Model.Paneles[i].Icon</i>
+                </div>
+            }
+        }
+        }
     </div>
     <div class="dashboard"></div>
 </div>

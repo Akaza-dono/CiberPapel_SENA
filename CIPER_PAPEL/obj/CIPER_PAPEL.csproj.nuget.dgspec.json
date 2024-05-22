@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\APRENDIZ\\Desktop\\ciber\\CiberPapel_SENA\\CIPER_PAPEL\\CIPER_PAPEL.csproj": {}
+    "C:\\Users\\APRENDIZ\\Desktop\\s\\CiberPapel_SENA\\CIPER_PAPEL\\CIPER_PAPEL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\APRENDIZ\\Desktop\\ciber\\CiberPapel_SENA\\CIPER_PAPEL\\CIPER_PAPEL.csproj": {
+    "C:\\Users\\APRENDIZ\\Desktop\\s\\CiberPapel_SENA\\CIPER_PAPEL\\CIPER_PAPEL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APRENDIZ\\Desktop\\ciber\\CiberPapel_SENA\\CIPER_PAPEL\\CIPER_PAPEL.csproj",
+        "projectUniqueName": "C:\\Users\\APRENDIZ\\Desktop\\s\\CiberPapel_SENA\\CIPER_PAPEL\\CIPER_PAPEL.csproj",
         "projectName": "CIPER_PAPEL",
-        "projectPath": "C:\\Users\\APRENDIZ\\Desktop\\ciber\\CiberPapel_SENA\\CIPER_PAPEL\\CIPER_PAPEL.csproj",
+        "projectPath": "C:\\Users\\APRENDIZ\\Desktop\\s\\CiberPapel_SENA\\CIPER_PAPEL\\CIPER_PAPEL.csproj",
         "packagesPath": "C:\\Users\\APRENDIZ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APRENDIZ\\Desktop\\ciber\\CiberPapel_SENA\\CIPER_PAPEL\\obj\\",
+        "outputPath": "C:\\Users\\APRENDIZ\\Desktop\\s\\CiberPapel_SENA\\CIPER_PAPEL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APRENDIZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
