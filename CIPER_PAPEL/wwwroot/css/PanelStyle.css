@@ -23,9 +23,12 @@ body {
     grid-row: 2 / 8;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 4px;
     align-content: flex-start;
     justify-content: center;
+    padding-top: 6px;
+    border-radius: 0px 0.5rem 0.5rem 0;
+    overflow: overlay;
 }
 .dashboard {
     background-color: deeppink;
@@ -39,19 +42,43 @@ body {
 .option {
     height: 3.5rem;
     width: 80%;
-    background-color: aliceblue;
     justify-self: center;
-    margin: 0.5rem 0;
+    margin: 0.1rem 0;
     display: flex;
-    justify-content: center; 
-    align-content: center; 
-    align-items: center;    
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
+    flex-wrap: nowrap;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.options-menu:hover .option {
-    background-color: lightcoral;
-    color: white;
-    width: 92%;
+.options-menu:hover {
+    transition-duration: 10s;
+}
+
+    .options-menu:hover .option {
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 10px;
+        border: 1px solid black;
+        
+    }
+
+
+
+.visibility {
+    content-visibility: hidden;
+    font-display: block;
+}
+
+.options-menu:hover .visibility {
+    content-visibility: visible;
+    white-space: nowrap; /* El texto no se dividirá en varias líneas */
+    text-align: center !important;
 }
 
 .material-icons {
