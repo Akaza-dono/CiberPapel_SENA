@@ -1,4 +1,5 @@
 ﻿@model CIPER_PAPEL.Class.UserListViewModel
+
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="~/css/PanelStyle.css" rel="stylesheet"/>
 
@@ -13,11 +14,18 @@
             for (int i = 0; i < Model.Paneles.Count(); i++){
                 <div class="option">
                     <i class="material-icons">@Model.Paneles[i].Icon</i>
+                    <span class="visibility" >@Model.Paneles[i].Descripcion</span>
                 </div>
             }
         }
         }
     </div>
-    <div class="dashboard"></div>
+    <div class="dashboard">
+        <input value="0" id="total"/>
+    </div>
 </div>
+
+<!-- Scripts al final del archivo -->
+<script src="~/js/signalR.js"></script>
+<script src="~/js/rxjs.js"></script>
 <script src="~/js/site.js"></script>

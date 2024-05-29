@@ -1,0 +1,25 @@
+﻿<input type="type" name="name" value="3" />
+<input type="type" name="name" value="3" />
+<button>enviar</button>
+
+<script>
+    var dataToSend = {
+        Cantidad: 2,
+        idProducto: 30
+    };
+
+    fetch('/Home/AddSell', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(dataToSend)
+    })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Respuesta del servidor:', data);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+</script>

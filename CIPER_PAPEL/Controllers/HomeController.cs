@@ -6,6 +6,7 @@ using CIPER_PAPEL.Class;
 using System.Collections.Specialized;
 using System.Data;
 using System.Reflection;
+using Microsoft.AspNetCore.SignalR;
 
 namespace CIPER_PAPEL.Controllers
 {
@@ -13,15 +14,24 @@ namespace CIPER_PAPEL.Controllers
     {
         private Connection _Connection = new Connection();
 
+        public HomeController()
+        {
 
+        }
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Sells()
         {
             return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddSell(Sells sells)
+        {
+            return View("Sells");
         }
 
         [HttpPost]
