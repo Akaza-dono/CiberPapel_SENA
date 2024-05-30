@@ -25,21 +25,3 @@ optionsMenu.addEventListener('mouseleave', () => {
     elementContainer.style.gridTemplateColumns = `0.2fr repeat(5, 1fr)`;
 })
 
-//HUB CONNECTION
-
-let hubConnectionBuilder = new signalR.HubConnectionBuilder();
-hubConnectionBuilder.withUrl("/RealData");
-let connection = hubConnectionBuilder.build();
-
-connection.start()
-    .then(() => {
-        console.log('Conexión establecida correctamente');
-    })
-    .catch(error => {
-        console.error('Error al establecer la conexión:', error);
-    });
-
-connection.on("SendMessage", (total) => {
-    document.getElementById('total').value = total
-    console.log(total);
-});
