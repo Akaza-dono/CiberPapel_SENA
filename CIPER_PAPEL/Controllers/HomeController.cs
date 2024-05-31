@@ -14,10 +14,6 @@ namespace CIPER_PAPEL.Controllers
     {
         private Connection _Connection = new Connection();
 
-        public HomeController()
-        {
-
-        }
         public IActionResult Index()
         {
             return View();
@@ -28,11 +24,7 @@ namespace CIPER_PAPEL.Controllers
             return View();
         }
 
-        [HttpPost]
-        public async Task<IActionResult> AddSell(Sells sells)
-        {
-            return View("Sells");
-        }
+
 
         [HttpPost]
         public bool EditUser([FromBody] User User)

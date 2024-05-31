@@ -15,10 +15,6 @@ namespace CIPER_PAPEL.Controllers
             model.Paneles = GetPanels(userId);
 
             return View(model);
-
-
-
-            //return View();
         }
 
         public List<Panel> GetPanels(int user_id)

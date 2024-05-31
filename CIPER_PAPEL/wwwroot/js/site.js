@@ -25,6 +25,7 @@ optionsMenu.addEventListener('mouseleave', () => {
     elementContainer.style.gridTemplateColumns = `0.2fr repeat(5, 1fr)`;
 })
 
+<<<<<<< HEAD
 //HUB CONNECTION
 
 let hubConnectionBuilder = new signalR.HubConnectionBuilder();
@@ -41,5 +42,7 @@ connection.start()
 
 connection.on("SendMessage", (total) => {
     document.getElementById('total').value = total
-    console.log(total);
 });
+ 
+=======
+>>>>>>> 46e3851137146b623338a75442b9b82571c8002f

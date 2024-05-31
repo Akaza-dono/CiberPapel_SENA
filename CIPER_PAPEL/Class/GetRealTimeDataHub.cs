@@ -4,9 +4,10 @@ namespace CIPER_PAPEL.Class
 {
     public class GetRealTimeDataHub : Hub
     {
-        public async Task Send(int total = 45)
-        {
-            await Clients.All.SendAsync("Recieve", total);
-        }
+<<<<<<< HEAD
+        
+=======
+       
+>>>>>>> 46e3851137146b623338a75442b9b82571c8002f
     }
 }

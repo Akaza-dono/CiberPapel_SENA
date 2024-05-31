@@ -83,3 +83,10 @@ body {
 .material-icons {
     font-size: 35px;
 }
+
+.impact-label {
+    font-family: Impact, sans-serif;
+    font-size: 100px; /* Tamaño de fuente opcional */
+    color: black; /* Color de texto opcional */
+    /* Otros estilos de CSS según sea necesario */
+}
