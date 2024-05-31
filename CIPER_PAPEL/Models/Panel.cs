@@ -1,4 +1,4 @@
-﻿namespace CIPER_PAPEL.Class
+﻿namespace CIPER_PAPEL.Models
 {
     public class Panel
     {

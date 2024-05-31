@@ -24,4 +24,3 @@ optionsMenu.addEventListener('mouseover', () => {
 optionsMenu.addEventListener('mouseleave', () => {
     elementContainer.style.gridTemplateColumns = `0.2fr repeat(5, 1fr)`;
 })
-

@@ -6,6 +6,8 @@ using CIPER_PAPEL.Class;
 using System.Collections.Specialized;
 using System.Data;
 using System.Reflection;
+using Microsoft.AspNetCore.SignalR;
+using System.Xml.Linq;
 
 namespace CIPER_PAPEL.Controllers
 {
@@ -13,71 +15,96 @@ namespace CIPER_PAPEL.Controllers
     {
         private Connection _Connection = new Connection();
 
+        public HomeController()
+        {
 
+        }
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Sells()
         {
             return View();
         }
 
         [HttpPost]
-        public bool EditUser([FromBody] User User)
+        public async Task<IActionResult> AddSell(Sells sells)
         {
-            try
-            {
-                using (SqlConnection conn = new SqlConnection(_Connection.GetConnection()))
-                {
-                    conn.Open();
-
-                    using (SqlCommand cmd = new SqlCommand("ActualizarUsuario", conn))
-                    {
-                        cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@id_usuario", User.Id);
-                        cmd.Parameters.AddWithValue("@nombre", User.Nombre);
-                        cmd.Parameters.AddWithValue("@correo", User.Correo);
-                        cmd.Parameters.AddWithValue("@isBlocked", User.IsBlocked);
-                        cmd.Parameters.AddWithValue("@idRole", User.Rol);
-
-                        cmd.ExecuteNonQuery();
-                    }
-                }
-                return true;
-            }
-            catch (SqlException ex)
-            {
-                throw new Exception("Error de SQL: " + ex.Message);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Error: " + ex.Message);
-            }
+            return View("Sells");
         }
 
-        public void DeleteUser(int UserId)  
-        {
-            try
-            {
-                using (SqlConnection conn = new SqlConnection(_Connection.GetConnection()))
-                {
-                    conn.Open();
+        //[HttpPost]
+        //public bool EditUser([FromBody] User User)
+        //{
+        //    try
+        //    {
+        //        using (SqlConnection conn = new SqlConnection(_Connection.GetConnection()))
+        //        {
+        //            conn.Open();
 
-                    using (SqlCommand cmd = new SqlCommand("EliminarUsuario", conn))
-                    {
-                        cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@id_usuario", UserId);
-                        cmd.ExecuteNonQuery();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Error: " + ex.Message);
-            }
-        }
+        //            using (SqlCommand cmd = new SqlCommand("ActualizarUsuario", conn))
+        //            {
+        //                cmd.CommandType = CommandType.StoredProcedure;
+        //                cmd.Parameters.AddWithValue("@id_usuario", User.Id);
+        //                cmd.Parameters.AddWithValue("@nombre", User.Nombre);
+        //                cmd.Parameters.AddWithValue("@correo", User.Correo);
+        //                cmd.Parameters.AddWithValue("@isBlocked", User.IsBlocked);
+        //                cmd.Parameters.AddWithValue("@idRole", User.Rol);
+
+        //                cmd.ExecuteNonQuery();
+        //            }
+        //        }
+        //        return true;
+        //    }
+        //    catch (SqlException ex)
+        //    {
+        //        throw new Exception("Error de SQL: " + ex.Message);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new Exception("Error: " + ex.Message);
+        //    }
+        //}
+
+        //[HttpPost]
+        //public bool EditUser([FromBody] User User)
+        //{
+        //    Connection conn = new Connection();
+        //    string spNMame = "ActualizarUsuario";
+        //    SqlParameter[] parameters = new SqlParameter[]
+        //    {
+        //        new SqlParameter("@id_usuario", User.Id),
+        //        new SqlParameter("@nombre", User.Nombre),
+        //        new SqlParameter("@correo", User.Correo),
+        //        new SqlParameter("@isBlocked", User.IsBlocked),
+        //        new SqlParameter("@idRole", User.Rol)
+        //    };
+        //    DataTable resultadosSP = conn.EjecutarSP(spNMame, parameters);
+        //}
+
+        //public void DeleteUser(int UserId)  
+        //{
+        //    try
+        //    {
+        //        using (SqlConnection conn = new SqlConnection(_Connection.GetConnection()))
+        //        {
+        //            conn.Open();
+
+        //            using (SqlCommand cmd = new SqlCommand("EliminarUsuario", conn))
+        //            {
+        //                cmd.CommandType = CommandType.StoredProcedure;
+        //                cmd.Parameters.AddWithValue("@id_usuario", UserId);
+        //                cmd.ExecuteNonQuery();
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new Exception("Error: " + ex.Message);
+        //    }
+        //}
 
         [HttpPost]
         public IActionResult Login(string usuario, string contrasena)
@@ -85,24 +112,16 @@ namespace CIPER_PAPEL.Controllers
             try
             {
                 int result = 0;
-                using (SqlConnection connection = new SqlConnection(_Connection.GetConnection()))
+                Connection conn = new Connection();
+                string spNMame = "Login";
+                SqlParameter[] parameters = new SqlParameter[]
                 {
-                    connection.Open();
-                    using (SqlCommand command = new SqlCommand("Login", connection))
-                    {
-                        command.CommandType = CommandType.StoredProcedure;
-                        command.Parameters.AddWithValue("@usuario", "alejandro");
-                        command.Parameters.AddWithValue("@password", "alejo0598");
-                        var reader = command.ExecuteReader();
-                        if (reader.HasRows)
-                        {
-                            while (reader.Read())
-                            {
-                                result = Convert.ToInt32(reader["Result"]);
-                            }
-                        }
-                    }
-                }
+                new SqlParameter("@usuario", "alejandro"),
+                new SqlParameter("@password",  "alejo0598"),
+                };
+                DataTable resultadosSP = conn.EjecutarSP(spNMame, parameters);
+                result = Convert.ToInt32(resultadosSP.Rows[0]["Result"]);
+
                 if (result != 0)
                 {
                     List<User> users = GetUser();
@@ -125,20 +144,6 @@ namespace CIPER_PAPEL.Controllers
             {
                 throw;
             }
-            //const int result = 1;
-            //if (result != 0)
-            //{
-            //    //List<User> users = GetUser();
-            //    //var model = new UserListViewModel
-            //    //{
-            //    //    Users = users,
-            //    //    Response = "OK"
-            //    //};
-
-            //    //return View("LoginPage", model);
-            //    return RedirectToAction("index", "Panel");
-            //}
-
         }
 
         public List<User> GetUser()
@@ -146,45 +151,31 @@ namespace CIPER_PAPEL.Controllers
             try
             {
                 List<User> users = new List<User>();
-                using (SqlConnection conn = new SqlConnection(_Connection.GetConnection()))
+                Connection conn = new Connection();
+                string spNMame = "ObtenerUsuarios";
+                DataTable resultadosSP = conn.EjecutarSP(spNMame);
+                SqlParameter[] parameters = new SqlParameter[]
                 {
-                    string Sp = "ObtenerUsuarios";
-                    using (SqlCommand cmd = new SqlCommand(Sp, conn))
-                    {
-                        cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                        cmd.CommandText = Sp;
-                        conn.Open();
-                        using (SqlDataReader dr = cmd.ExecuteReader())
-                        {
-                            if (dr.HasRows)
-                            {
-                                while (dr.Read())
-                                {
-                                    var user = new User();
-                                    user.Id = Convert.ToInt32(dr["id_usuario"]);
-                                    user.Nombre = dr["nombre"].ToString();
-                                    user.Correo = dr["correo"].ToString();
-                                    user.IsBlocked = Convert.ToBoolean(dr["isBlocked"]);
-                                    user.Rol = Convert.ToInt32(dr["idRole"]);
-                                    users.Add(user);
-                                }
-                            }
-                        }
-                    }
+
+                };
+                foreach (DataRow param in resultadosSP.Rows)
+                {
+                    var user = new User();
+                    user.Id = Convert.ToInt32(param["id_usuario"]);
+                    user.Nombre = param["nombre"].ToString();
+                    user.Correo = param["correo"].ToString();
+                    user.IsBlocked = Convert.ToBoolean(param["isBlocked"]);
+                    user.Rol = Convert.ToInt32(param["idRole"]);
+                    users.Add(user);
                 }
                 return users;
+
             }
             catch (Exception)
             {
 
                 throw;
             }
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
