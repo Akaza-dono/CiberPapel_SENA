@@ -1,5 +1,4 @@
 using CIPER_PAPEL.Class;
-using CIPER_PAPEL.Interfaces;
 using CIPER_PAPEL.Models;
 
 var builder = WebApplication.CreateBuilder(args);
