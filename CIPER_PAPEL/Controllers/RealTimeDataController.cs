@@ -22,5 +22,6 @@ namespace CIPER_PAPEL.Controllers
             await _hubcontext.Clients.All.SendAsync("SendMessage",message);
             return Ok();
         }
+
     }
 }

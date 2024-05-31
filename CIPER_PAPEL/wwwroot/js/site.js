@@ -41,5 +41,5 @@ connection.start()
 
 connection.on("SendMessage", (total) => {
     document.getElementById('total').value = total
-    console.log(total);
 });
+ 
