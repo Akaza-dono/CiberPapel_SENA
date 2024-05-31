@@ -1,4 +1,6 @@
 using CIPER_PAPEL.Class;
+using CIPER_PAPEL.Interfaces;
+using CIPER_PAPEL.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,9 +33,7 @@ app.MapControllerRoute(
 
 app.UseEndpoints(endpoints =>
 {
-    // Corrige la ruta del hub de SignalR, elimina el espacio adicional al final
     endpoints.MapHub<GetRealTimeDataHub>("/RealData");
-
 });
 
 app.Run();
