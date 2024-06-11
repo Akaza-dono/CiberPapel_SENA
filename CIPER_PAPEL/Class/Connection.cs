@@ -45,7 +45,6 @@ namespace CIPER_PAPEL.Class
                 }
                 catch (Exception ex)
                 {
-                    // Manejo de errores
                     Console.WriteLine("Error al ejecutar consulta: " + ex.Message);
                 }
             }
@@ -53,7 +52,7 @@ namespace CIPER_PAPEL.Class
             return dt;
         }
 
-        public DataTable EjecutarSP(string spName, SqlParameter[] parameters = null)
+        public DataTable EjecutarSP(string spName, SqlParameter[]? parameters = null)
         {
             DataTable dt = new DataTable();
 
@@ -61,22 +60,17 @@ namespace CIPER_PAPEL.Class
             {
                 SqlCommand command = new SqlCommand(spName, connection);
                 command.CommandType = CommandType.StoredProcedure;
-
-                // Agregar parámetros si los hay
                 if (parameters != null)
                 {
                     command.Parameters.AddRange(parameters);
                 }
-
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
-
                 try
                 {
                     adapter.Fill(dt);
                 }
                 catch (Exception ex)
                 {
-                    // Manejo de errores
                     Console.WriteLine("Error al ejecutar procedimiento almacenado: " + ex.Message);
                 }
             }

@@ -3,64 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\class\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\class\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\controllers\\panelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\controllers\\panelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\class\\getrealtimedatahub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\class\\getrealtimedatahub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\views\\home\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\views\\home\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\class\\facturacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\class\\facturacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\models\\panel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\models\\panel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\models\\sells.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\models\\sells.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\models\\userlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\models\\userlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\class\\dailydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\class\\dailydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\views\\panel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\views\\panel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\controllers\\realtimedatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\controllers\\realtimedatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\class\\getrealtimedatahub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\class\\getrealtimedatahub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\class\\facturacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\class\\facturacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\wwwroot\\js\\hub.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\wwwroot\\js\\hub.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\escritorio\\ciberpapel\\ciberpapel_sena\\ciper_papel\\wwwroot\\js\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\wwwroot\\js\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,178 +54,109 @@
       "DocumentGroups": [
         {
           "DockedWidth": 283,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "site.js",
-              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "CIPER_PAPEL\\wwwroot\\js\\site.js",
-              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "CIPER_PAPEL\\wwwroot\\js\\site.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-29T04:31:45.715Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "CIPER_PAPEL\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "CIPER_PAPEL\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Views\\Panel\\Index.cshtml",
+              "RelativeDocumentMoniker": "CIPER_PAPEL\\Views\\Panel\\Index.cshtml",
+              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Views\\Panel\\Index.cshtml",
+              "RelativeToolTip": "CIPER_PAPEL\\Views\\Panel\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-31T05:51:23.073Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T05:51:36.328Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Connection.cs",
-              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Class\\Connection.cs",
-              "RelativeDocumentMoniker": "CIPER_PAPEL\\Class\\Connection.cs",
-              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Class\\Connection.cs",
-              "RelativeToolTip": "CIPER_PAPEL\\Class\\Connection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "DocumentIndex": 2,
+              "Title": "DailyData.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Class\\DailyData.cs",
+              "RelativeDocumentMoniker": "CIPER_PAPEL\\Class\\DailyData.cs",
+              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Class\\DailyData.cs",
+              "RelativeToolTip": "CIPER_PAPEL\\Class\\DailyData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T07:09:46.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-10T19:15:17.282Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "CIPER_PAPEL\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "CIPER_PAPEL\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAUwCIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T19:01:10.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "CIPER_PAPEL\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Controllers\\HomeController.cs",
               "RelativeToolTip": "CIPER_PAPEL\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAQAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAnwFIAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T05:59:10.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PanelController.cs",
-              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Controllers\\PanelController.cs",
-              "RelativeDocumentMoniker": "CIPER_PAPEL\\Controllers\\PanelController.cs",
-              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Controllers\\PanelController.cs",
-              "RelativeToolTip": "CIPER_PAPEL\\Controllers\\PanelController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T04:35:05.232Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserListViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Models\\UserListViewModel.cs",
-              "RelativeDocumentMoniker": "CIPER_PAPEL\\Models\\UserListViewModel.cs",
-              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Models\\UserListViewModel.cs",
-              "RelativeToolTip": "CIPER_PAPEL\\Models\\UserListViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T05:58:46.608Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Program.cs",
-              "RelativeDocumentMoniker": "CIPER_PAPEL\\Program.cs",
-              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Program.cs",
-              "RelativeToolTip": "CIPER_PAPEL\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T06:19:12.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GetRealTimeDataHub.cs",
-              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Class\\GetRealTimeDataHub.cs",
-              "RelativeDocumentMoniker": "CIPER_PAPEL\\Class\\GetRealTimeDataHub.cs",
-              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Class\\GetRealTimeDataHub.cs",
-              "RelativeToolTip": "CIPER_PAPEL\\Class\\GetRealTimeDataHub.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T05:57:36.868Z",
+              "WhenOpened": "2024-06-10T05:55:58.146Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "EditUser.cshtml",
-              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Views\\Home\\EditUser.cshtml",
-              "RelativeDocumentMoniker": "CIPER_PAPEL\\Views\\Home\\EditUser.cshtml",
-              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Views\\Home\\EditUser.cshtml",
-              "RelativeToolTip": "CIPER_PAPEL\\Views\\Home\\EditUser.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-31T06:44:49.797Z",
-              "EditorCaption": ""
+              "Title": "RealTimeDataController.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Controllers\\RealTimeDataController.cs",
+              "RelativeDocumentMoniker": "CIPER_PAPEL\\Controllers\\RealTimeDataController.cs",
+              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Controllers\\RealTimeDataController.cs",
+              "RelativeToolTip": "CIPER_PAPEL\\Controllers\\RealTimeDataController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T06:53:19.909Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Models\\User.cs",
-              "RelativeDocumentMoniker": "CIPER_PAPEL\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Models\\User.cs",
-              "RelativeToolTip": "CIPER_PAPEL\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 5,
+              "Title": "GetRealTimeDataHub.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Class\\GetRealTimeDataHub.cs",
+              "RelativeDocumentMoniker": "CIPER_PAPEL\\Class\\GetRealTimeDataHub.cs",
+              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Class\\GetRealTimeDataHub.cs",
+              "RelativeToolTip": "CIPER_PAPEL\\Class\\GetRealTimeDataHub.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T05:58:39.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-10T18:58:42.146Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Panel.cs",
-              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Models\\Panel.cs",
-              "RelativeDocumentMoniker": "CIPER_PAPEL\\Models\\Panel.cs",
-              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Models\\Panel.cs",
-              "RelativeToolTip": "CIPER_PAPEL\\Models\\Panel.cs",
+              "Title": "hub.js",
+              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\hub.js",
+              "RelativeDocumentMoniker": "CIPER_PAPEL\\wwwroot\\js\\hub.js",
+              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\hub.js",
+              "RelativeToolTip": "CIPER_PAPEL\\wwwroot\\js\\hub.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T05:58:56.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "CIPER_PAPEL\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "CIPER_PAPEL\\Models\\ErrorViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T05:58:36.582Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-10T18:59:46.289Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Sells.cs",
-              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Models\\Sells.cs",
-              "RelativeDocumentMoniker": "CIPER_PAPEL\\Models\\Sells.cs",
-              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Models\\Sells.cs",
-              "RelativeToolTip": "CIPER_PAPEL\\Models\\Sells.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Program.cs",
+              "RelativeDocumentMoniker": "CIPER_PAPEL\\Program.cs",
+              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Program.cs",
+              "RelativeToolTip": "CIPER_PAPEL\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T05:57:50.797Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-10T18:59:50.835Z"
             },
             {
               "$type": "Document",
@@ -251,23 +166,33 @@
               "RelativeDocumentMoniker": "CIPER_PAPEL\\Class\\Facturacion.cs",
               "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Class\\Facturacion.cs",
               "RelativeToolTip": "CIPER_PAPEL\\Class\\Facturacion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T05:57:20.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T05:57:20.87Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Views\\Panel\\Index.cshtml",
-              "RelativeDocumentMoniker": "CIPER_PAPEL\\Views\\Panel\\Index.cshtml",
-              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Views\\Panel\\Index.cshtml",
-              "RelativeToolTip": "CIPER_PAPEL\\Views\\Panel\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-31T05:51:36.328Z",
-              "EditorCaption": ""
+              "DocumentIndex": 9,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "CIPER_PAPEL\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "CIPER_PAPEL\\wwwroot\\js\\site.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-10T18:59:43.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "login.js",
+              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\login.js",
+              "RelativeDocumentMoniker": "CIPER_PAPEL\\wwwroot\\js\\login.js",
+              "ToolTip": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\login.js",
+              "RelativeToolTip": "CIPER_PAPEL\\wwwroot\\js\\login.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-10T18:59:33.916Z"
             }
           ]
         }

@@ -19,9 +19,10 @@ namespace CIPER_PAPEL.Controllers
         [HttpGet]
         public async Task<IActionResult> Send(string message)
         {
-            await _hubcontext.Clients.All.SendAsync("SendMessage",message);
+            DailyData a = new();
+            decimal b = a.GetAllSells();
+            await _hubcontext.Clients.All.SendAsync("SendMessage", b);
             return Ok();
         }
-
     }
 }

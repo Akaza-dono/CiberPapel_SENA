@@ -13,7 +13,6 @@ namespace CIPER_PAPEL.Controllers
         {
             UserListViewModel model = new UserListViewModel();
             model.Paneles = GetPanels(userId);
-
             return View(model);
         }
 
