@@ -17,7 +17,7 @@
 
 <script>
     const url = '/Home/'
-
+    alert();
     let differentValidation = (obj, param) => {
 
     }
@@ -27,7 +27,7 @@
             dataSource: @Html.Raw(Json.Serialize(Model.Users)),
             columns: [
                 { dataField: "id", caption: "ID" },
-                { dataField: "nombre", caption: "Nombre" },
+                { dataField: "nombre", caption: "Nombre" },     
                 { dataField: "correo", caption: "Correo" },
                 { dataField: "rol", caption: "Rol" },
                 {

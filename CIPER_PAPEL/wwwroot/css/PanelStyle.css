@@ -76,7 +76,7 @@ body {
 
 .options-menu:hover .visibility {
     content-visibility: visible;
-    white-space: nowrap; /* El texto no se dividirá en varias líneas */
+    white-space: nowrap;
     text-align: center !important;
 }
 
@@ -86,7 +86,13 @@ body {
 
 .impact-label {
     font-family: Impact, sans-serif;
-    font-size: 100px; /* Tamaño de fuente opcional */
-    color: black; /* Color de texto opcional */
-    /* Otros estilos de CSS según sea necesario */
+    font-size: 100px; 
+    color: black; 
+    text-align: center;
+}
+
+#total {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

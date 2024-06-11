@@ -8,13 +8,12 @@ using System.Data;
 using System.Reflection;
 using Microsoft.AspNetCore.SignalR;
 using System.Xml.Linq;
+using CIPER_PAPEL.DDBBModels;
 
 namespace CIPER_PAPEL.Controllers
 {
     public class HomeController : Controller
     {
-        private Connection _Connection = new Connection();
-
         public HomeController()
         {
 
@@ -30,87 +29,56 @@ namespace CIPER_PAPEL.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddSell(Sells sells)
+        public bool EditUser([FromBody] User User)
         {
-            return View("Sells");
+            try
+            {
+               
+                Connection conn = new Connection();
+                string spNMame = "ActualizarUsuario";
+                SqlParameter[] parameters = new SqlParameter[]
+                {
+                new SqlParameter("@id_usuario", User.Id),
+                new SqlParameter("@nombre", User.Nombre),
+                new SqlParameter("@correo", User.Correo),
+                new SqlParameter("@isBlocked", User.IsBlocked),
+                new SqlParameter("@idRole", User.Rol)
+                };
+                DataTable resultadosSP = conn.EjecutarSP(spNMame, parameters);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw new Exception($"no se pudo eliminar el usuario {ex.Message}");
+            }
         }
 
-        //[HttpPost]
-        //public bool EditUser([FromBody] User User)
-        //{
-        //    try
-        //    {
-        //        using (SqlConnection conn = new SqlConnection(_Connection.GetConnection()))
-        //        {
-        //            conn.Open();
-
-        //            using (SqlCommand cmd = new SqlCommand("ActualizarUsuario", conn))
-        //            {
-        //                cmd.CommandType = CommandType.StoredProcedure;
-        //                cmd.Parameters.AddWithValue("@id_usuario", User.Id);
-        //                cmd.Parameters.AddWithValue("@nombre", User.Nombre);
-        //                cmd.Parameters.AddWithValue("@correo", User.Correo);
-        //                cmd.Parameters.AddWithValue("@isBlocked", User.IsBlocked);
-        //                cmd.Parameters.AddWithValue("@idRole", User.Rol);
-
-        //                cmd.ExecuteNonQuery();
-        //            }
-        //        }
-        //        return true;
-        //    }
-        //    catch (SqlException ex)
-        //    {
-        //        throw new Exception("Error de SQL: " + ex.Message);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception("Error: " + ex.Message);
-        //    }
-        //}
-
-        //[HttpPost]
-        //public bool EditUser([FromBody] User User)
-        //{
-        //    Connection conn = new Connection();
-        //    string spNMame = "ActualizarUsuario";
-        //    SqlParameter[] parameters = new SqlParameter[]
-        //    {
-        //        new SqlParameter("@id_usuario", User.Id),
-        //        new SqlParameter("@nombre", User.Nombre),
-        //        new SqlParameter("@correo", User.Correo),
-        //        new SqlParameter("@isBlocked", User.IsBlocked),
-        //        new SqlParameter("@idRole", User.Rol)
-        //    };
-        //    DataTable resultadosSP = conn.EjecutarSP(spNMame, parameters);
-        //}
-
-        //public void DeleteUser(int UserId)  
-        //{
-        //    try
-        //    {
-        //        using (SqlConnection conn = new SqlConnection(_Connection.GetConnection()))
-        //        {
-        //            conn.Open();
-
-        //            using (SqlCommand cmd = new SqlCommand("EliminarUsuario", conn))
-        //            {
-        //                cmd.CommandType = CommandType.StoredProcedure;
-        //                cmd.Parameters.AddWithValue("@id_usuario", UserId);
-        //                cmd.ExecuteNonQuery();
-        //            }
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception("Error: " + ex.Message);
-        //    }
-        //}
+        public bool DeleteUser(int UserId)
+        {
+            try
+            {
+                Connection conn = new Connection();
+                string spNMame = "EliminarUsuario";
+                SqlParameter[] parameters = new SqlParameter[]
+                {
+                new SqlParameter("@id_usuario", UserId),
+                };
+                DataTable resultadosSP = conn.EjecutarSP(spNMame, parameters);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
 
         [HttpPost]
         public IActionResult Login(string usuario, string contrasena)
         {
             try
             {
+                
                 int result = 0;
                 Connection conn = new Connection();
                 string spNMame = "Login";
