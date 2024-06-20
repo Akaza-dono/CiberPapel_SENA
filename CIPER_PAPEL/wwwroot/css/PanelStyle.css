@@ -9,7 +9,7 @@
 }
 
 .header {
-    background-color: red;
+    background-color: #edede9;
     grid-column: 1/7;
 }
 
@@ -29,9 +29,10 @@ body {
     padding-top: 6px;
     border-radius: 0px 0.5rem 0.5rem 0;
     overflow: overlay;
+    align-items: center; 
 }
 .dashboard {
-    background-color: deeppink;
+    background-color: #e0e1dd;
     grid-column: 2/7;
     grid-row: 2/7;
     display: grid;
@@ -64,7 +65,6 @@ body {
         display: flex;
         justify-content: flex-start;
         padding-left: 10px;
-        border: 1px solid black;
     }
 
 
@@ -86,13 +86,25 @@ body {
 
 .impact-label {
     font-family: Impact, sans-serif;
-    font-size: 100px; 
-    color: black; 
+    font-size: 100px;
+    color: black;
     text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
 }
 
 #total {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.totalSells {
+    padding: 10px;
+    border-radius: 1rem;
+    background: #e0e1dd;
+    box-shadow: 20px 20px 60px #bebfbc, -20px -20px 60px #fffffe;
 }

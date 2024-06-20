@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6aaEWbkFlkKNtA7uki9h6WhlS3vqJhqvMYyQN3ZPgy8=",
+  "Hash": "sj2vDCQUcmoA86hKYFdHyQQ+lPr4aD8IRyHXB0PDUes=",
   "Source": "CIPER_PAPEL",
   "BasePath": "_content/CIPER_PAPEL",
   "Mode": "Default",
@@ -150,6 +150,25 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\Charts.js",
+      "SourceId": "CIPER_PAPEL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\",
+      "BasePath": "_content/CIPER_PAPEL",
+      "RelativePath": "js/Charts.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Charts.js"
+    },
+    {
       "Identity": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\hub.js",
       "SourceId": "CIPER_PAPEL",
       "SourceType": "Discovered",
@@ -169,12 +188,12 @@
       "OriginalItemSpec": "wwwroot\\js\\hub.js"
     },
     {
-      "Identity": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\login.js",
+      "Identity": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\proveedores.js",
       "SourceId": "CIPER_PAPEL",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\",
       "BasePath": "_content/CIPER_PAPEL",
-      "RelativePath": "js/login.js",
+      "RelativePath": "js/proveedores.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -185,7 +204,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\login.js"
+      "OriginalItemSpec": "wwwroot\\js\\proveedores.js"
     },
     {
       "Identity": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\rxjs.js",
@@ -243,6 +262,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\solicitudes.js",
+      "SourceId": "CIPER_PAPEL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\",
+      "BasePath": "_content/CIPER_PAPEL",
+      "RelativePath": "js/solicitudes.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\solicitudes.js"
+    },
+    {
+      "Identity": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\usuarios.js",
+      "SourceId": "CIPER_PAPEL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\",
+      "BasePath": "_content/CIPER_PAPEL",
+      "RelativePath": "js/usuarios.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\usuarios.js"
     },
     {
       "Identity": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

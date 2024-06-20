@@ -34,10 +34,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/migue/OneDrive/Escritorio/CiberPapel/CiberPapel_SENA/CIPER_PAPEL/Views/Home/Sells.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWxscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/migue/OneDrive/Escritorio/CiberPapel/CiberPapel_SENA/CIPER_PAPEL/Views/Panel/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFuZWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -48,6 +44,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/migue/OneDrive/Escritorio/CiberPapel/CiberPapel_SENA/CIPER_PAPEL/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Escritorio/CiberPapel/CiberPapel_SENA/CIPER_PAPEL/Views/Vistas/Proveedores.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzdGFzXFByb3ZlZWRvcmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Escritorio/CiberPapel/CiberPapel_SENA/CIPER_PAPEL/Views/Vistas/Sells.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzdGFzXFNlbGxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/migue/OneDrive/Escritorio/CiberPapel/CiberPapel_SENA/CIPER_PAPEL/Views/_ViewImports.cshtml]

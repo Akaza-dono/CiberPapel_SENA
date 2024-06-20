@@ -10,6 +10,7 @@ namespace CIPER_PAPEL.DDBBModels
         public int? IdUsuario { get; set; }
         public int? IdProducto { get; set; }
         public int SecuenciaVenta { get; set; }
+        public bool? IsAvailable { get; set; }
 
         public virtual Producto? IdProductoNavigation { get; set; }
         public virtual Usuario? IdUsuarioNavigation { get; set; }

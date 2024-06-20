@@ -54,6 +54,30 @@ namespace CIPER_PAPEL.Controllers
             }
         }
 
+        [HttpPost]
+        public bool EditProveedor([FromBody] Proveedore proveedor)
+        {
+            try
+            {
+
+                Connection conn = new Connection();
+                string spNMame = "ActualizarProveedor";
+                SqlParameter[] parameters = new SqlParameter[]
+                {
+                new SqlParameter("@id_proveedor", proveedor.IdProveedor),
+                new SqlParameter("@rut", proveedor.Rut),
+                new SqlParameter("@nombre", proveedor.Nombre),
+                };
+                DataTable resultadosSP = conn.EjecutarSP(spNMame, parameters);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw new Exception($"no se pudo eliminar el usuario {ex.Message}");
+            }
+        }
+
         public bool DeleteUser(int UserId)
         {
             try
@@ -78,24 +102,21 @@ namespace CIPER_PAPEL.Controllers
         {
             try
             {
-                
                 int result = 0;
                 Connection conn = new Connection();
                 string spNMame = "Login";
                 SqlParameter[] parameters = new SqlParameter[]
                 {
                 new SqlParameter("@usuario", "alejandro"),
-                new SqlParameter("@password",  "alejo0598"),
+                new SqlParameter("@password",  "alejo0598")
                 };
                 DataTable resultadosSP = conn.EjecutarSP(spNMame, parameters);
                 result = Convert.ToInt32(resultadosSP.Rows[0]["Result"]);
 
                 if (result != 0)
                 {
-                    List<User> users = GetUser();
                     var model = new UserListViewModel
                     {
-                        Users = users,
                         Response = "OK"
                     };
 
@@ -110,38 +131,6 @@ namespace CIPER_PAPEL.Controllers
             }
             catch (Exception)
             {
-                throw;
-            }
-        }
-
-        public List<User> GetUser()
-        {
-            try
-            {
-                List<User> users = new List<User>();
-                Connection conn = new Connection();
-                string spNMame = "ObtenerUsuarios";
-                DataTable resultadosSP = conn.EjecutarSP(spNMame);
-                SqlParameter[] parameters = new SqlParameter[]
-                {
-
-                };
-                foreach (DataRow param in resultadosSP.Rows)
-                {
-                    var user = new User();
-                    user.Id = Convert.ToInt32(param["id_usuario"]);
-                    user.Nombre = param["nombre"].ToString();
-                    user.Correo = param["correo"].ToString();
-                    user.IsBlocked = Convert.ToBoolean(param["isBlocked"]);
-                    user.Rol = Convert.ToInt32(param["idRole"]);
-                    users.Add(user);
-                }
-                return users;
-
-            }
-            catch (Exception)
-            {
-
                 throw;
             }
         }
