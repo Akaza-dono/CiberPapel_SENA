@@ -240,7 +240,7 @@ namespace CIPER_PAPEL.Data
                 entity.Property(e => e.FechaVenta)
                     .HasColumnType("datetime")
                     .HasColumnName("fecha_venta")
-                    .HasDefaultValueSql("(getdate())");
+                    .HasDefaultValueSql("(format(getdate(),'yyyy-MM-ddTHH:mm:ss.fff'))");
 
                 entity.Property(e => e.IdVentaState).HasColumnName("idVentaState");
 
@@ -332,6 +332,11 @@ namespace CIPER_PAPEL.Data
                 entity.Property(e => e.IdProducto).HasColumnName("id_producto");
 
                 entity.Property(e => e.IdUsuario).HasColumnName("id_usuario");
+
+                entity.Property(e => e.IsAvailable)
+                    .IsRequired()
+                    .HasColumnName("isAvailable")
+                    .HasDefaultValueSql("((1))");
 
                 entity.Property(e => e.SecuenciaVenta)
                     .HasColumnName("secuencia_venta")

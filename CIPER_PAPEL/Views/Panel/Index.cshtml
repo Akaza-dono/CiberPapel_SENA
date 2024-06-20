@@ -1,28 +1,45 @@
 ﻿@model UserListViewModel
-
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="~/css/PanelStyle.css" rel="stylesheet"/>
-
+<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
 <div class="body-color-back container d-flex flex-wrap flex-row gap-1 ">
 </div>
 <div class="element-container">
     <header class="header"></header>
     <div class="options-menu" id="options-menu">
         @{
-            if (Model.Paneles != null)
+            @if (Model.Paneles != null)
             {
-                for (int i = 0; i < Model.Paneles.Count(); i++){
-                    <div class="option">
-                        <i class="material-icons">@Model.Paneles[i].Icon</i>
-                        <span class="visibility" >@Model.Paneles[i].Descripcion</span>
-                    </div>
+                for (int i = 0; i < Model.Paneles.Count(); i++)
+                {
+                    string nombreMetodo = Model.Paneles[i].URL; // Asumiendo que este es el nombre del método en tu modelo
+                    <form method="post" action="@Url.Action(nombreMetodo, "Views")" class="option">
+                        <button type="submit" style="background:none; border:none; padding:0; cursor:pointer;" class="option">
+                            <i class="material-icons">@Model.Paneles[i].Icon</i>
+                            <span class="visibility">@Model.Paneles[i].Descripcion</span>
+                        </button>
+                    </form>
                 }
             }
         }
     </div>
     <div class="dashboard">
-        <div id="total" class="impact-label">
-            0
+        <div class="impact-label">
+            <div class="totalSells" id="total">
+                0
+            </div>
+        </div>
+        <div class="charts">
+            <div id="chartContainerDonut" ></div>
+        </div>
+        <div class="charts" >
+            <div id="chartContainerLinear" style="height: 300px; width: 100%;"></div>
+        </div>
+        <div class="charts">
+            <div id="chartContainerSells"></div>
+
         </div>
     </div>
 </div>
@@ -30,3 +47,4 @@
 <script src="~/js/rxjs.js"></script>
 <script src="~/js/site.js"></script>
 <script src="~/js/hub.js"></script>
+<script src="~/js/Charts.js"></script>

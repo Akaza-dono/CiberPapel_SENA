@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CIPER_PAPEL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b31d187d87317698354d95e90db0b65239f53d3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df78597489e4139b238b55e57872b38f07b48d24")]
 [assembly: System.Reflection.AssemblyProductAttribute("CIPER_PAPEL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CIPER_PAPEL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

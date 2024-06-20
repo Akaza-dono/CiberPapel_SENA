@@ -46,5 +46,28 @@ namespace CIPER_PAPEL.Controllers
                 throw;
             }
         }
+
+        [HttpGet]
+        [Route("panel/getalldata")]
+        public AllData GetAllData()
+        {
+            try
+            {
+                DailyData DailyData = new();
+                AllData data = new();
+                data.GetDailySells = DailyData.GetDailySells();
+                data.GetAllSells = DailyData.GetAllSells();
+                data.EstadoVentas = DailyData.EstadoVentas();
+                data.GetProductos = DailyData.GetProductos();
+                data.Total = DailyData.TotalVentas();
+
+                return data;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
     }
 }

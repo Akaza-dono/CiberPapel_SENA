@@ -25,12 +25,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\Charts.js",
+      "PackagePath": "staticwebassets\\js\\Charts.js"
+    },
+    {
       "Id": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\hub.js",
       "PackagePath": "staticwebassets\\js\\hub.js"
     },
     {
-      "Id": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\login.js",
-      "PackagePath": "staticwebassets\\js\\login.js"
+      "Id": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\proveedores.js",
+      "PackagePath": "staticwebassets\\js\\proveedores.js"
     },
     {
       "Id": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\rxjs.js",
@@ -43,6 +47,14 @@
     {
       "Id": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\solicitudes.js",
+      "PackagePath": "staticwebassets\\js\\solicitudes.js"
+    },
+    {
+      "Id": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\js\\usuarios.js",
+      "PackagePath": "staticwebassets\\js\\usuarios.js"
     },
     {
       "Id": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\wwwroot\\lib\\bootstrap\\LICENSE",
