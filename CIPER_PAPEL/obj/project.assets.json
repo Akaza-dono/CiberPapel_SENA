@@ -2230,11 +2230,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\CIPER_PAPEL.csproj",
+      "projectUniqueName": "C:\\Users\\migue\\OneDrive\\Documentos\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\CIPER_PAPEL.csproj",
       "projectName": "CIPER_PAPEL",
-      "projectPath": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\CIPER_PAPEL.csproj",
+      "projectPath": "C:\\Users\\migue\\OneDrive\\Documentos\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\CIPER_PAPEL.csproj",
       "packagesPath": "C:\\Users\\migue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\migue\\OneDrive\\Escritorio\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\obj\\",
+      "outputPath": "C:\\Users\\migue\\OneDrive\\Documentos\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\migue\\AppData\\Roaming\\NuGet\\NuGet.Config",

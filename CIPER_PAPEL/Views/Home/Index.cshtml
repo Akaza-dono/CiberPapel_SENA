@@ -4,9 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="~/css/style.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados para el botón */
+        .buttonIn {
+            background-color: #4a90e2;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .buttonIn:hover {
+                background-color: #357abd;
+            }
+
+        /* Estilos personalizados para el contenedor de login */
+        .login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #1f2937; /* Fondo gris oscuro */
+            padding: 1.5rem;
+        }
+
+            .login form {
+                height: 450px !important;
+                width: 25%;
+                background-color: #2d3748;
+                border-radius: 0.375rem;
+                padding: 2rem;
+                max-width: 400px;
+                width: 100%;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .login h3 {
+                color: #edf2f7; /* Texto blanco */
+                margin-bottom: 1.5rem;
+                text-align: center;
+            }
+
+            .login label {
+                display: block;
+                margin-bottom: 0.5rem;
+                color: #e2e8f0; /* Color de texto */
+            }
+
+            .login input {
+                width: 100%;
+                background-color: #4a5568; /* Fondo gris más claro */
+                border: 1px solid #2d3748;
+                border-radius: 0.375rem;
+                padding: 0.75rem;
+                color: #edf2f7; /* Texto blanco */
+                margin-bottom: 1rem;
+            }
+
+                .login input::placeholder {
+                    color: #e2e8f0; /* Placeholder en gris claro */
+                }
+
+            .login p {
+                color: red;
+                text-align: center;
+                margin-top: 1rem;
+            }
+    </style>
 </head>
 <body>
     <div class="login">
@@ -16,9 +86,9 @@
             <label for="usuario"><strong>Nombre de usuario</strong></label>
             <input type="text" placeholder="Usuario o contraseña" name="usuario" id="usuario" />
 
-            @if (Model != null &&  Model.Response == "Error")
+            @if (Model != null && Model.Response == "Error")
             {
-                <p style="color: red;">El usuario o contraseña son incorrectos, por favor verifica</p>
+                <p>El usuario o contraseña son incorrectos, por favor verifica</p>
             }
 
             <label for="password"><strong>Contraseña</strong></label>
@@ -27,8 +97,7 @@
             <button class="buttonIn" id="loginButton" type="submit">Log In</button>
         </form>
     </div>
-    <div class="circle first"></div>
-    <div class="circle second"></div>
 </body>
 </html>
+
 <script src="~/js/login.js" type="text/javascript"></script>

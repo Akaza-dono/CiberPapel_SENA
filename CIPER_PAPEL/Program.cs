@@ -1,11 +1,15 @@
 using CIPER_PAPEL.Class;
+using CIPER_PAPEL.Data;
 using CIPER_PAPEL.Models;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSignalR();
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CiberpapelScaffold")));
 
 var app = builder.Build();
 
@@ -21,7 +25,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 
-
+app.UseCors("AllowOrigin");
 app.UseRouting();
 
 app.UseAuthorization();

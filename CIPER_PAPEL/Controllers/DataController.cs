@@ -58,5 +58,22 @@ namespace CIPER_PAPEL.Controllers
             }
         }
 
+        [HttpGet("GetProductos")]
+        public List<Producto> GetProductos()
+        {
+            try
+            {
+                using (ApplicationDbContext context = new())
+                {
+                    var query = context.Productos.ToList();
+                    return query;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"no se pueden extraer los datos {ex}");
+            }
+        }
+
     }
 }

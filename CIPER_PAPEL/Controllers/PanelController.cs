@@ -1,6 +1,8 @@
 ﻿using CIPER_PAPEL.Class;
+using CIPER_PAPEL.Data;
 using CIPER_PAPEL.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using System.Data;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
@@ -9,10 +11,27 @@ namespace CIPER_PAPEL.Controllers
 {
     public class PanelController : Controller
     {
-        public IActionResult Index(int userId)
+
+
+        private ApplicationDbContext _ApplicationDbContext;
+
+        public PanelController( ApplicationDbContext context)
         {
+            _ApplicationDbContext = context;
+        }
+        public IActionResult Index(int userId, string name)
+        {
+            DailyData data = new(_ApplicationDbContext);
             UserListViewModel model = new UserListViewModel();
+            User user = new();
             model.Paneles = GetPanels(userId);
+            user.Id = userId;
+            user.Nombre = name;
+            model.User = user;
+            model.TotalUser = data.TotalUsers();
+            model.totalVentas = data.GetAllSells();
+            model.TotalProveedores = data.TotalProveedores();
+
             return View(model);
         }
 
@@ -32,10 +51,12 @@ namespace CIPER_PAPEL.Controllers
 
                 foreach (DataRow param in resultadosSP.Rows)
                 {
-                    Panel CreatePanel = new Panel();
+                    var CreatePanel = new Panel();
                     CreatePanel.Descripcion = Convert.ToString(param["textDescription"]);
                     CreatePanel.URL = Convert.ToString(param["url"]);
                     CreatePanel.Icon = Convert.ToString(param["icon"]);
+                    CreatePanel.goTo = Convert.ToString(param["sendTo"]);
+
                     panel.Add(CreatePanel);
                 }
                 return panel;
@@ -53,7 +74,7 @@ namespace CIPER_PAPEL.Controllers
         {
             try
             {
-                DailyData DailyData = new();
+                DailyData DailyData = new(_ApplicationDbContext);
                 AllData data = new();
                 data.GetDailySells = DailyData.GetDailySells();
                 data.GetAllSells = DailyData.GetAllSells();

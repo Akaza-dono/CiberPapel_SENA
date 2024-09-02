@@ -7,6 +7,12 @@ namespace CIPER_PAPEL.Class
 {
     public class DailyData
     {
+        private readonly ApplicationDbContext _context;
+        public DailyData(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         public decimal GetAllSells()
         {
             using (ApplicationDbContext context = new ApplicationDbContext())
@@ -23,7 +29,7 @@ namespace CIPER_PAPEL.Class
                                       select ventas.Cantidad * productos.Precio
                                      ).Sum();
                 decimal total;
-                total = (decimal)totalVentasHoy == null ? 0.00m : (decimal)totalVentasHoy;
+                total = (decimal?)totalVentasHoy == null ? 0.00m : (decimal)totalVentasHoy;
                 return total;
             }
         }
@@ -103,6 +109,15 @@ namespace CIPER_PAPEL.Class
 
                 throw;
             }
+        }
+
+        public int TotalUsers() {
+            return _context.Usuarios.Count();
+        }
+
+        public int TotalProveedores()
+        {
+            return _context.Proveedores.Count();
         }
 
     }

@@ -100,6 +100,7 @@ namespace CIPER_PAPEL.Controllers
         [HttpPost]
         public IActionResult Login(string usuario, string contrasena)
         {
+            if (usuario == null) usuario = "alejandro";
             try
             {
                 int result = 0;
@@ -123,7 +124,8 @@ namespace CIPER_PAPEL.Controllers
                     //return View("LoginPage", model);
                     return RedirectToAction("index", "Panel", new
                     {
-                        userId = result
+                        userId = result,
+                        name = usuario,
                     });
                 }
                 var model2 = new UserListViewModel { Response = "Error" };

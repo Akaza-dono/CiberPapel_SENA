@@ -13,5 +13,5 @@ connection.start()
     });
 
 connection.on("SendMessage", (total) => {
-    document.getElementById('total').innerHTML = `${123}`
+    document.getElementById('total').innerHTML = `${total}`
 });

@@ -8,5 +8,10 @@ namespace CIPER_PAPEL.Models
         public User? User { get; set; }
         public string? Response { get; set; }
         public List<Panel>? Paneles { get; set; }
+        public int TotalUser { get; set; }
+        public int QVentas { get; set; }
+        public decimal totalVentas { get; set; }
+        public int TotalProveedores { get; set; }
+
     }
 }
