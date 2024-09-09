@@ -250,23 +250,23 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     userEngagementChart.render();
 
-    function updateCharts() {
-        const charts = [userGrowthChart, revenueOverviewChart, trafficSourcesChart, userEngagementChart];
-        const randomChart = charts[Math.floor(Math.random() * charts.length)];
+    //function updateCharts() {
+    //    const charts = [userGrowthChart, revenueOverviewChart, trafficSourcesChart, userEngagementChart];
+    //    const randomChart = charts[Math.floor(Math.random() * charts.length)];
 
-        if (randomChart === trafficSourcesChart) {
-            const newData = Array(5).fill().map(() => Math.floor(Math.random() * 100) + 1);
-            randomChart.updateSeries(newData);
-        } else {
-            const currentSeries = randomChart.w.globals.series[0];
-            if (currentSeries) {
-                const newData = currentSeries.map(() => Math.floor(Math.random() * 100) + 1);
-                randomChart.updateSeries([{ data: newData }]);
-            } else {
-                console.error("No series data available for the selected chart.");
-            }
-        }
-    }
+    //    if (randomChart === trafficSourcesChart) {
+    //        const newData = Array(5).fill().map(() => Math.floor(Math.random() * 100) + 1);
+    //        randomChart.updateSeries(newData);
+    //    } else {
+    //        const currentSeries = randomChart.w.globals.series[0];
+    //        if (currentSeries) {
+    //            const newData = currentSeries.map(() => Math.floor(Math.random() * 100) + 1);
+    //            randomChart.updateupdateSeries([{ data: newData }]);
+    //        } else {
+    //            console.error("No series data available for the selected chart.");
+    //        }
+    //    }
+    //}
 
     setInterval(updateCharts, 5000);
 
@@ -315,14 +315,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    const downloadButtons = document.querySelectorAll('#filesContent button');
-    downloadButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const fileName = button.closest('li').querySelector('p').textContent;
-            console.log(`Downloading ${fileName}`);
-            alert(`Downloading ${fileName}`);
-        });
-    });
+    //const downloadButtons = document.querySelectorAll('#filesContent button');
+    //downloadButtons.forEach(button => {
+    //    button.addEventListener('click', () => {
+    //        const fileName = button.closest('li').querySelector('p').textContent;
+    //        console.log(`Downloading ${fileName}`);
+    //        alert(`Downloading ${fileName}`);
+    //    });
+    //});
 
     const userActionButtons = document.querySelectorAll('#usersContent button');
     userActionButtons.forEach(button => {

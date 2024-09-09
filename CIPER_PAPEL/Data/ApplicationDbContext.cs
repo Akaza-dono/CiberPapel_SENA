@@ -20,6 +20,7 @@ namespace CIPER_PAPEL.Data
         public virtual DbSet<Compra> Compras { get; set; } = null!;
         public virtual DbSet<Comprobante> Comprobantes { get; set; } = null!;
         public virtual DbSet<Factura> Facturas { get; set; } = null!;
+        public virtual DbSet<FilesXuser> FilesXusers { get; set; } = null!;
         public virtual DbSet<Panel> Panels { get; set; } = null!;
         public virtual DbSet<Producto> Productos { get; set; } = null!;
         public virtual DbSet<Proveedore> Proveedores { get; set; } = null!;
@@ -33,13 +34,10 @@ namespace CIPER_PAPEL.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var builder = new ConfigurationBuilder();
-            builder.AddJsonFile("appsettings.json");
-            var configuration = builder.Build();
-            var connString = configuration.GetConnectionString("CiberpapelScaffold");
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(connString);
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+                optionsBuilder.UseSqlServer("Server=Astaroth\\SQLEXPRESS;Database=ciberpapel;Integrated Security=true;Trusted_Connection=True;User ID=sa;Password=Ethan2022");
             }
         }
 
@@ -121,6 +119,28 @@ namespace CIPER_PAPEL.Data
                 entity.Property(e => e.IdVenta).HasColumnName("id_venta");
             });
 
+            modelBuilder.Entity<FilesXuser>(entity =>
+            {
+                entity.HasKey(e => e.IdFile);
+
+                entity.ToTable("FilesXUser");
+
+                entity.Property(e => e.FileName)
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.FileType)
+                    .HasMaxLength(100)
+                    .IsFixedLength();
+
+                entity.Property(e => e.IdUser).HasColumnName("idUser");
+
+                entity.HasOne(d => d.IdUserNavigation)
+                    .WithMany(p => p.FilesXusers)
+                    .HasForeignKey(d => d.IdUser)
+                    .HasConstraintName("FK_FilesXUser_usuario");
+            });
+
             modelBuilder.Entity<Panel>(entity =>
             {
                 entity.ToTable("panel");
@@ -134,6 +154,11 @@ namespace CIPER_PAPEL.Data
                     .HasMaxLength(100)
                     .IsUnicode(false)
                     .HasColumnName("icon");
+
+                entity.Property(e => e.SendTo)
+                    .HasMaxLength(30)
+                    .IsUnicode(false)
+                    .HasColumnName("sendTo");
 
                 entity.Property(e => e.TextDescription)
                     .IsUnicode(false)
@@ -152,9 +177,7 @@ namespace CIPER_PAPEL.Data
 
                 entity.ToTable("producto");
 
-                entity.Property(e => e.IdProducto)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id_producto");
+                entity.Property(e => e.IdProducto).HasColumnName("id_producto");
 
                 entity.Property(e => e.Descripcion)
                     .HasColumnType("text")
@@ -177,9 +200,7 @@ namespace CIPER_PAPEL.Data
 
                 entity.ToTable("proveedores");
 
-                entity.Property(e => e.IdProveedor)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id_proveedor");
+                entity.Property(e => e.IdProveedor).HasColumnName("id_proveedor");
 
                 entity.Property(e => e.Nombre)
                     .HasMaxLength(50)

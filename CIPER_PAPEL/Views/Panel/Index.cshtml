@@ -44,7 +44,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>CiberPapel Dashboard</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -108,7 +108,6 @@
                 <li class="mb-4"><a href="#" class="nav-link" data-page="messages"><i class="fas fa-comments mr-3"></i>Messages</a></li>
                 <li class="mb-4"><a href="#" class="nav-link" data-page="analytics"><i class="fas fa-chart-bar mr-3"></i>Analytics</a></li>
                 <li class="mb-4"><a href="#" class="nav-link" data-page="files"><i class="fas fa-folder mr-3"></i>Files</a></li>
-                <li class="mb-4"><a href="#" class="nav-link" data-page="users"><i class="fas fa-users mr-3"></i>Users</a></li>
                 <li class="mb-4"><a href="#" class="nav-link" data-page="settings"><i class="fas fa-cog mr-3"></i>Settings</a></li>
                @*  <li class="mb-4"><a href="#" class="nav-link active" data-page="dashboard"><i class="fa-solid fa-pencil mr-3"></i>Dashboard</a></li> *@
             </ul>
@@ -116,7 +115,7 @@
 
         <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-900">
             <header class="bg-gray-800 p-4 flex justify-between items-center sticky top-0 z-10">
-                <h2 id="pageTitle" class="text-2xl font-bold">Dashboard</h2>
+                <h2 id="pageTitle" class="text-2xl font-bold">CiberPapel Dashboard</h2>
                 <div class="flex items-center space-x-4 relative">
                     <div class="relative">
                         <input type="text" placeholder="Search" class="bg-gray-700 rounded-full py-2 px-4 pl-10 focus:outline-none focus:ring-2 focus:ring-purple-600 transition-all duration-300">
@@ -345,42 +344,52 @@
                         </table>
                     </div>
                 </div>
+                <div id="filesContent" class="bg-gray-800 rounded-xl p-6 mb-8 hidden">
+                    <!-- Contenido de archivos recientes -->
+                    <h3 class="text-xl font-semibold mb-4">Recent Files</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center justify-between bg-gray-700 p-4 rounded-lg">
+                            <div class="flex items-center">
+                                <i class="fas fa-file-pdf text-red-500 text-2xl mr-4"></i>
+                                <div>
+                                    <p class="font-semibold">Annual Report 2023.pdf</p>
+                                    <p class="text-sm text-gray-400">5.2 MB</p>
+                                </div>
+                            </div>
+                            <button class="text-blue-500 hover:text-blue-600"><i class="fas fa-download"></i></button>
+                        </li>
+                        <li class="flex items-center justify-between bg-gray-700 p-4 rounded-lg">
+                            <div class="flex items-center">
+                                <i class="fas fa-file-excel text-green-500 text-2xl mr-4"></i>
+                                <div>
+                                    <p class="font-semibold">Financial Projections.xlsx</p>
+                                    <p class="text-sm text-gray-400">3.7 MB</p>
+                                </div>
+                            </div>
+                            <button class="text-blue-500 hover:text-blue-600"><i class="fas fa-download"></i></button>
+                        </li>
+                        <li class="flex items-center justify-between bg-gray-700 p-4 rounded-lg">
+                            <div class="flex items-center">
+                                <i class="fas fa-file-image text-purple-500 text-2xl mr-4"></i>
+                                <div>
+                                    <p class="font-semibold">Product Mockups.zip</p>
+                                    <p class="text-sm text-gray-400">127.3 MB</p>
+                                </div>
+                            </div>
+                            <button class="text-blue-500 hover:text-blue-600"><i class="fas fa-download"></i></button>
+                        </li>
+                    </ul>
+                    <!-- Botón para abrir el formulario de carga -->
+                    <button id="uploadButton" class="bg-blue-500 text-white px-4 py-2 rounded-lg mt-6">Subir Nuevo Archivo</button>
+                    <button id="downloadFile" class="bg-blue-500 text-white px-4 py-2 rounded-lg mt-6">Descargar Archivo</button>
 
-                <div id="filesContent" class="hidden">
-                    <div class="bg-gray-800 rounded-xl p-6 mb-8">
-                        <h3 class="text-xl font-semibold mb-4">Recent Files</h3>
-                        <ul class="space-y-4">
-                            <li class="flex items-center justify-between bg-gray-700 p-4 rounded-lg">
-                                <div class="flex items-center">
-                                    <i class="fas fa-file-pdf text-red-500 text-2xl mr-4"></i>
-                                    <div>
-                                        <p class="font-semibold">Annual Report 2023.pdf</p>
-                                        <p class="text-sm text-gray-400">5.2 MB</p>
-                                    </div>
-                                </div>
-                                <button class="text-blue-500 hover:text-blue-600"><i class="fas fa-download"></i></button>
-                            </li>
-                            <li class="flex items-center justify-between bg-gray-700 p-4 rounded-lg">
-                                <div class="flex items-center">
-                                    <i class="fas fa-file-excel text-green-500 text-2xl mr-4"></i>
-                                    <div>
-                                        <p class="font-semibold">Financial Projections.xlsx</p>
-                                        <p class="text-sm text-gray-400">3.7 MB</p>
-                                    </div>
-                                </div>
-                                <button class="text-blue-500 hover:text-blue-600"><i class="fas fa-download"></i></button>
-                            </li>
-                            <li class="flex items-center justify-between bg-gray-700 p-4 rounded-lg">
-                                <div class="flex items-center">
-                                    <i class="fas fa-file-image text-purple-500 text-2xl mr-4"></i>
-                                    <div>
-                                        <p class="font-semibold">Product Mockups.zip</p>
-                                        <p class="text-sm text-gray-400">127.3 MB</p>
-                                    </div>
-                                </div>
-                                <button class="text-blue-500 hover:text-blue-600"><i class="fas fa-download"></i></button>
-                            </li>
-                        </ul>
+                    <!-- Formulario de carga de archivos -->
+                    <div id="uploadForm" class="hidden mt-4">
+                        <div class="border-2 border-dashed border-gray-500 rounded-lg p-4 text-center text-gray-400 hover:border-gray-300 hover:bg-gray-700 transition-colors">
+                            <p>Arrastra y suelta un archivo aquí o haz clic para seleccionar uno.</p>
+                            <input type="file" id="fileInput" class="hidden" accept=".pdf, .doc, .docx, .jpg, .jpeg, .png" />
+                        </div>
+                        <button id="submitFile" class="bg-blue-500 text-white px-4 py-2 rounded-lg mt-4">Subir Archivo</button>
                     </div>
                 </div>
 
@@ -492,3 +501,85 @@
 <script src="~/js/Charts.js"></script> 
 <script src="~/js/ventas.js" type="module"></script>
 <script src="~/js/proveedores.js" type="module"></script>
+<script>
+    // Mostrar y ocultar el formulario
+    document.getElementById('uploadButton').addEventListener('click', function () {
+        const form = document.getElementById('uploadForm');
+        form.classList.toggle('hidden');
+    });
+
+    // Manejo de drag and drop
+    const dropzone = document.querySelector('#uploadForm .border-dashed');
+    const fileInput = document.getElementById('fileInput');
+
+    dropzone.addEventListener('dragover', function (event) {
+        event.preventDefault();
+        dropzone.classList.add('border-gray-300', 'bg-gray-700');
+    });
+
+    dropzone.addEventListener('dragleave', function () {
+        dropzone.classList.remove('border-gray-300', 'bg-gray-700');
+    });
+
+    dropzone.addEventListener('drop', function (event) {
+        event.preventDefault();
+        dropzone.classList.remove('border-gray-300', 'bg-gray-700');
+        const files = event.dataTransfer.files;
+        if (files.length) {
+            fileInput.files = files;
+        }
+    });
+
+    dropzone.addEventListener('click', function () {
+        fileInput.click();
+    });
+
+    fileInput.addEventListener('change', function () {
+        if (fileInput.files.length) {
+            console.log(`Archivo seleccionado: ${fileInput.files[0].name}`);
+        }
+    });
+
+    // Manejo del botón de subir archivo
+    document.getElementById('submitFile').addEventListener('click', function () {
+        const file = fileInput.files[0];
+        if (file) {
+            var formData = new FormData();
+            formData.append('file', file);
+
+            fetch('api/File/upload', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Éxito:', data);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        } else {
+            alert('Por favor, selecciona un archivo.');
+        }
+    });
+
+
+    document.getElementById("downloadFile").addEventListener("click", async () => {
+        try {
+            // 1. Solicitar el archivo binario desde el backend
+            const response = await fetch('/api/File/download/1'); // Cambia la URL por la ruta de tu API y el id del archivo
+            const fileBlob = await response.blob(); // Obtener el archivo en formato Blob
+
+            // 2. Crear un enlace para descargar el archivo
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(fileBlob);
+            link.download = 'archivo_descargado'; // Nombre del archivo, puedes agregar extensión si lo deseas
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+        } catch (error) {
+            console.error("Error al descargar el archivo:", error);
+        }
+    });
+</script>

@@ -15,6 +15,7 @@ namespace CIPER_PAPEL.DDBBModels
         public string Url { get; set; } = null!;
         public string Icon { get; set; } = null!;
         public string TextDescription { get; set; } = null!;
+        public string? SendTo { get; set; }
 
         public virtual ICollection<RolPermission> RolPermissions { get; set; }
         public virtual ICollection<UserPermission> UserPermissions { get; set; }
