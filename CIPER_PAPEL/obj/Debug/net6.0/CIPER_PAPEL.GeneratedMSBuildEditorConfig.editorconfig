@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\migue\OneDrive\Documentos\CiberPapel\CiberPapel_SENA\CIPER_PAPEL
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/migue/OneDrive/Documentos/CiberPapel/CiberPapel_SENA/CIPER_PAPEL/Views/Chat/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/migue/OneDrive/Documentos/CiberPapel/CiberPapel_SENA/CIPER_PAPEL/Views/Chat/Room.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFxSb29tLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/migue/OneDrive/Documentos/CiberPapel/CiberPapel_SENA/CIPER_PAPEL/Views/Home/EditUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0VXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,3 +1,4 @@
+using CIPER_PAPEL;
 using CIPER_PAPEL.Class;
 using CIPER_PAPEL.Data;
 using CIPER_PAPEL.Models;
@@ -29,7 +30,7 @@ app.UseCors("AllowOrigin");
 app.UseRouting();
 
 app.UseAuthorization();
-
+app.MapHub<ChatHub>("/ChatHub");
 app.MapControllerRoute(
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}");

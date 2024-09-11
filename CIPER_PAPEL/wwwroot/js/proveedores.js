@@ -100,7 +100,8 @@ fetchData().then(data => {
                     });
             },
             onRowRemoving: function (e) {
-                fetch(`${url}DeleteUser?UserId=${e.data.id}`);
+                console.log(e)
+                fetch(`${url}DeleteProveedor?UserId=${e.data.idProveedor}`);
             }
         });
     });

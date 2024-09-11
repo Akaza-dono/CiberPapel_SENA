@@ -9,6 +9,7 @@ using System.Reflection;
 using Microsoft.AspNetCore.SignalR;
 using System.Xml.Linq;
 using CIPER_PAPEL.DDBBModels;
+using CIPER_PAPEL.Data;
 
 namespace CIPER_PAPEL.Controllers
 {
@@ -96,6 +97,36 @@ namespace CIPER_PAPEL.Controllers
                 return false;
             }
         }
+
+        public void DeleteProveedor(int userId)
+        {
+            try
+            {
+                // Usamos using para garantizar la correcta disposición del contexto
+                using (var ctx = new ApplicationDbContext())
+                {
+                    var proveedor = ctx.Proveedores.SingleOrDefault(e => e.IdProveedor == userId);
+
+                    if (proveedor != null)
+                    {
+                        ctx.Proveedores.Remove(proveedor);
+                        ctx.SaveChanges(); // Asegurarse de que los cambios se persisten
+                    }
+                    else
+                    {
+                        // Manejar el caso en que no se encuentre el proveedor
+                        throw new Exception("Proveedor no encontrado.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejo más adecuado de la excepción
+                // Puedes registrar el error o manejarlo de otra forma
+                throw new Exception($"Error al eliminar el proveedor: {ex.Message}", ex);
+            }
+        }
+
 
         [HttpPost]
         public IActionResult Login(string usuario, string contrasena)

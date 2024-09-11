@@ -1,0 +1,138 @@
+﻿@{
+	Layout = null;
+}
+
+@model int
+<link href="~/css/users.css" rel="stylesheet" />
+
+<main>
+	<div style="display: block;    text-align: center;"></div>
+	<div class="full-viewport">
+		<div class="chat-window glassmorphism">
+
+			<div class="chat-title">
+				<div class="chat-title-avatar">
+					<img src="https://assets.codepen.io/5135314/internal/avatars/users/default.png" alt="profile-picture">
+				</div>
+				<div>
+					<span class="chat-title-name" id="name"></span>
+					<div class="chat-title-status">
+						<div class="chat-title-status-circle"></div>
+						<p class="chat-title-status-text">Active 3 minutes ago</p>
+					</div>
+				</div>
+				<div style="display: block; position: absolute; width: 100%; text-align: center">
+					<h1>@CIPER_PAPEL.Controllers.ChatController.Rooms.GetValueOrDefault(Model)</h1>
+
+				</div>
+			</div>
+
+			<div class="chat-messages" id="chat-messages">
+				<div class="message">
+					<div class="bubble">
+						<div class="bubble-text">Hey, I haven't seen you in a while!</div>
+					</div>
+				</div>
+				<div class="message">
+					<div class="bubble">
+						<div class="bubble-text">How's life going? 😃</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="chat-input">
+				<input type="text" id="message-input" placeholder="Send a message">
+				<button id="send-button">Enviar</button>
+			</div>
+
+		</div>
+	</div>
+</main>
+
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
+
+<script>
+	let $user = "";
+	var connection = new signalR.HubConnectionBuilder().withUrl("/ChatHub").build();
+	const ENTER_KEY = "Enter";
+	const messageInput = document.getElementById("message-input");
+	const sendButton = document.getElementById("send-button");
+	const chatMessages = document.getElementById("chat-messages");
+
+	let myMessage = (messageText) => {
+		const messageDiv = document.createElement("div");
+		const bubbleDiv = document.createElement("div");
+		const bubbleTextDiv = document.createElement("div");
+
+		messageDiv.classList.add("message", "message-personal");
+		bubbleDiv.classList.add("bubble", "bubble-personal");
+		bubbleTextDiv.classList.add("bubble-text");
+
+		bubbleTextDiv.innerText = messageText;
+		bubbleDiv.appendChild(bubbleTextDiv);
+		messageDiv.appendChild(bubbleDiv);
+
+		chatMessages.appendChild(messageDiv);
+		messageInput.value = "";
+		chatMessages.scrollTop = chatMessages.scrollHeight;
+		event.preventDefault();
+	}
+
+	let otherMessage = (messageText) => {
+		const messageDiv = document.createElement("div");
+		const bubbleDiv = document.createElement("div");
+		const bubbleTextDiv = document.createElement("div");
+
+		messageDiv.classList.add("message");
+		bubbleDiv.classList.add("bubble");
+		bubbleTextDiv.classList.add("bubble-text");
+
+		bubbleTextDiv.innerText = messageText;
+		bubbleDiv.appendChild(bubbleTextDiv);
+		messageDiv.appendChild(bubbleDiv);
+
+		chatMessages.appendChild(messageDiv);
+		chatMessages.scrollTop = chatMessages.scrollHeight;
+	}
+
+	document.addEventListener("DOMContentLoaded", function () {
+		while (!$user) {
+			alert('ingrese un usuario')
+			$user = prompt("Por favor, ingrese su usuario:");
+		}
+
+		document.getElementById("name").innerHTML = $user
+		connection.start().then(() => {
+			connection.invoke("AddToGroup", "@Model")
+		}).catch(e => console.error(e))
+
+		sendButton.addEventListener("click", () => onButtonClick(messageInput, chatMessages));
+
+		messageInput.addEventListener("keyup", (event) => (event.key === ENTER_KEY) ? sendButton.click() : event.preventDefault());
+	});
+
+	const onButtonClick = (messageInput, chatMessages) => {
+		const messageText = messageInput.value;
+
+		let room = "@Model";
+
+		connection.invoke("SendMessage", messageText, room, $user).catch(e => console.error(e.toString()))
+
+
+		if (messageText.trim() === "") {
+			return false;
+		}
+
+
+	}
+
+	connection.on("RecieveMessage", (user, message) => {
+		if (message.trim() === "") {
+			return false;
+		}
+		$user === user ? myMessage(message) : otherMessage(message)
+	});
+
+
+
+</script>

@@ -1,121 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\migue\\OneDrive\\Documentos\\CiberPapel\\CiberPapel_SENA\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\documentos\\ciberpapel\\ciberpapel_sena\\ciper_papel\\views\\panel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\views\\panel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\documentos\\ciberpapel\\ciberpapel_sena\\ciper_papel\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\documentos\\ciberpapel\\ciberpapel_sena\\ciper_papel\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\documentos\\ciberpapel\\ciberpapel_sena\\ciper_papel\\class\\dailydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\class\\dailydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\migue\\AppData\\Local\\SourceServer\\23400787cfba3e0e473ce501eacd8b513d326461de2c77819f2a1b54ae818cca\\CIPER_PAPEL\\Class\\DailyData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|c:\\users\\migue\\onedrive\\documentos\\ciberpapel\\ciberpapel_sena\\ciper_papel\\class\\getrealtimedatahub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{965FBB42-4B08-4280-BE32-16A5496054AD}|CIPER_PAPEL\\CIPER_PAPEL.csproj|solutionrelative:ciper_papel\\class\\getrealtimedatahub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 343,
-          "SelectedChildIndex": 5,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DailyData.cs",
-              "DocumentMoniker": "C:\\Users\\migue\\AppData\\Local\\SourceServer\\23400787cfba3e0e473ce501eacd8b513d326461de2c77819f2a1b54ae818cca\\CIPER_PAPEL\\Class\\DailyData.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\23400787cfba3e0e473ce501eacd8b513d326461de2c77819f2a1b54ae818cca\\CIPER_PAPEL\\Class\\DailyData.cs",
-              "ToolTip": "C:\\Users\\migue\\AppData\\Local\\SourceServer\\23400787cfba3e0e473ce501eacd8b513d326461de2c77819f2a1b54ae818cca\\CIPER_PAPEL\\Class\\DailyData.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\23400787cfba3e0e473ce501eacd8b513d326461de2c77819f2a1b54ae818cca\\CIPER_PAPEL\\Class\\DailyData.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAYwHMAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T01:47:04.058Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DailyData.cs",
-              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Documentos\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Class\\DailyData.cs",
-              "RelativeDocumentMoniker": "CIPER_PAPEL\\Class\\DailyData.cs",
-              "ToolTip": "C:\\Users\\migue\\OneDrive\\Documentos\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Class\\DailyData.cs",
-              "RelativeToolTip": "CIPER_PAPEL\\Class\\DailyData.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAkwG0AAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T01:46:39.18Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GetRealTimeDataHub.cs",
-              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Documentos\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Class\\GetRealTimeDataHub.cs",
-              "RelativeDocumentMoniker": "CIPER_PAPEL\\Class\\GetRealTimeDataHub.cs",
-              "ToolTip": "C:\\Users\\migue\\OneDrive\\Documentos\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Class\\GetRealTimeDataHub.cs",
-              "RelativeToolTip": "CIPER_PAPEL\\Class\\GetRealTimeDataHub.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T01:13:51.646Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Documentos\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "CIPER_PAPEL\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\migue\\OneDrive\\Documentos\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "CIPER_PAPEL\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAGkAAAAAAAAAAAAgwIQAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T00:59:12.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FileController.cs",
-              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Documentos\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Controllers\\FileController.cs",
-              "RelativeDocumentMoniker": "CIPER_PAPEL\\Controllers\\FileController.cs",
-              "ToolTip": "C:\\Users\\migue\\OneDrive\\Documentos\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Controllers\\FileController.cs",
-              "RelativeToolTip": "CIPER_PAPEL\\Controllers\\FileController.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAqwFgAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T23:49:05.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\migue\\OneDrive\\Documentos\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Views\\Panel\\Index.cshtml",
-              "RelativeDocumentMoniker": "CIPER_PAPEL\\Views\\Panel\\Index.cshtml",
-              "ToolTip": "C:\\Users\\migue\\OneDrive\\Documentos\\CiberPapel\\CiberPapel_SENA\\CIPER_PAPEL\\Views\\Panel\\Index.cshtml",
-              "RelativeToolTip": "CIPER_PAPEL\\Views\\Panel\\Index.cshtml",
-              "ViewState": "AQIAABgCAAAAAAAAAAAowEYCAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-02T04:17:08.037Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

@@ -78,7 +78,10 @@ namespace CIPER_PAPEL.Controllers
         [HttpGet("download/{fileId}")]
         public IActionResult DownloadFile(int fileId)
         {
-            var fileRecord = applicationDbContext.FilesXusers.Find(fileId);
+
+            ApplicationDbContext ctx = new ApplicationDbContext();
+
+            var fileRecord = ctx.FilesXusers.Find(fileId);
             if (fileRecord == null)
             {
                 return NotFound();
